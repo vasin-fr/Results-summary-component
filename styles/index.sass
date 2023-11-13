@@ -1,0 +1,110 @@
+// @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500700800&display=swap')
+
+$light-red: hsl(0, 100%, 67%)
+$orangey-yellow: hsl(39, 100%, 56%)
+$green-teal: hsl(166, 100%, 37%)
+$cobalt-blue: hsl(234, 85%, 45%)
+$white: hsl(0, 0%, 100%)
+$pale-blue: hsl(221, 100%, 99%)
+$light-lavender: hsl(241, 100%, 89%)
+$dark-gray-blue: hsl(224, 30%, 27%)
+$light-slate-blue: hsl(252, 100%, 67%)
+$light-royal-blue: hsl(241, 81%, 54%)
+$violet-blue-circle: hsla(256, 72%, 46%, 1)
+$persian-blue-circle: hsla(241, 72%, 46%, 0)
+
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+ul
+    list-style-type: none
+
+body
+    font-family: 'Hanken Grotesk', sans-serif
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: $pale-blue
+
+section
+    display: flex
+    height: 400px
+    width: 550px
+    .info
+        display: flex
+        &__result
+            display: flex
+            flex-direction: column
+            text-align: center
+            justify-content: space-between
+            padding: 2rem
+            background: linear-gradient(to bottom, $light-slate-blue, $light-royal-blue)
+            border-radius: 20px
+            width: 50%
+            h3
+                color: $white
+                opacity: .6
+                font-weight: 700
+            &__counting
+                align-items: center
+                text-align: center
+                display: flex
+                flex-direction: column
+                .circle
+                    display: inline-block
+                    display: flex
+                    justify-content: center
+                    background: linear-gradient(to bottom, $violet-blue-circle, $persian-blue-circle)
+                    border-radius: 100%
+                    height: 160px
+                    width: 160px
+                    &__content
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        span
+                            color: $white
+                        &__litle
+                            font-size: .8rem
+                            font-weight: 300
+                            opacity: 0.6
+                        &__big
+                            font-size: 3rem
+                            font-weight: 800
+            &__about
+                color: $white
+                .title
+                    font-size: 1.6rem
+                p
+                    padding-top: 1rem
+                    font-size: .9rem
+                    opacity: 0.6
+                    font-weight: 500
+        &__summary
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            padding: 2rem
+            width: 50%
+            h3
+                font-weight: 700
+            ul
+                li
+                    display: flex
+                    justify-content: space-between
+                    padding: .9rem .5rem
+                    background-color: $persian-blue-circle
+                    div
+                        display: flex
+                        align-items: center
+                        div
+                            font-size: 1.1rem
+                            font-weight: 500
+                            padding-left: .9rem
+                #red
+                    div
+                        div
+                            color: $light-red
