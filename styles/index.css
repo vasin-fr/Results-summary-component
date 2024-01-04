@@ -38,7 +38,7 @@ section .info__result {
   border-radius: 20px;
   width: 50%;
 }
-section .info__result h3 {
+section .info__result h1 {
   color: hsl(0, 0%, 100%);
   opacity: 0.6;
   font-weight: 700;
@@ -151,6 +151,12 @@ section .info button {
   background-color: hsl(224, 30%, 27%);
   border-radius: 1.5rem;
   border: none;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+section .info button:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(252, 100%, 67%);
 }
 
 @media screen and (max-width: 562px) {
