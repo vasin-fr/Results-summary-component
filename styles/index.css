@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500700800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +22,8 @@ section {
   display: flex;
   height: 400px;
   width: 550px;
+  background-color: white;
+  border-radius: 20px;
 }
 section .info {
   display: flex;
@@ -90,6 +93,8 @@ section .info__summary {
   justify-content: space-between;
   padding: 2rem;
   width: 50%;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 100%);
 }
 section .info__summary h3 {
   font-weight: 700;
@@ -99,6 +104,8 @@ section .info__summary ul li {
   justify-content: space-between;
   padding: 0.9rem 0.5rem;
   background-color: hsla(241, 72%, 46%, 0);
+  border-radius: 10px;
+  margin-top: 0.8rem;
 }
 section .info__summary ul li div {
   display: flex;
@@ -109,6 +116,68 @@ section .info__summary ul li div div {
   font-weight: 500;
   padding-left: 0.9rem;
 }
+section .info__summary ul li .stat span {
+  margin-left: 5px;
+  color: #8d93a4;
+}
+section .info__summary ul #red {
+  background-color: #ffeeee;
+}
 section .info__summary ul #red div div {
   color: hsl(0, 100%, 67%);
+}
+section .info__summary ul #yellow {
+  background-color: #fff7e9;
+}
+section .info__summary ul #yellow div div {
+  color: hsl(39, 100%, 56%);
+}
+section .info__summary ul #green {
+  background-color: #e6f8f4;
+}
+section .info__summary ul #green div div {
+  color: hsl(166, 100%, 37%);
+}
+section .info__summary ul #pure {
+  background-color: #eaeafd;
+}
+section .info__summary ul #pure div div {
+  color: hsl(241, 81%, 54%);
+}
+section .info button {
+  margin-top: 1rem;
+  height: 2.4rem;
+  color: hsl(221, 100%, 99%);
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 1.5rem;
+  border: none;
+}
+
+@media screen and (max-width: 562px) {
+  section {
+    width: 100vw;
+    height: 100vh;
+  }
+  section .info {
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+  section .info__result {
+    width: 100%;
+    border-radius: 0 0 1rem 1rem;
+    text-align: center;
+  }
+  section .info__result p {
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+  }
+  section .info__summary {
+    width: 100%;
+  }
+  section .info button {
+    margin-top: 2rem;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -12,10 +12,14 @@
     />
 
     <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
-    <section>
+    <section class="animate__animated animate__zoomIn">
       <div class="info">
         <div class="info__result">
           <h3>Your Result</h3>
@@ -43,28 +47,28 @@
                 <img src="./assets/images/icon-reaction.svg" alt="rection" />
                 <div>Rection</div>
               </div>
-              <div class="stat">80 / <span>100</span></div>
+              <div class="stat">80 <span> / 100</span></div>
             </li>
             <li id="yellow">
               <div>
                 <img src="./assets/images/icon-memory.svg" alt="Memory" />
                 <div>Memory</div>
               </div>
-              <div class="stat">92 / <span>100</span></div>
+              <div class="stat">92 <span> / 100</span></div>
             </li>
             <li id="green">
               <div>
                 <img src="./assets/images/icon-verbal.svg" alt="Verbal" />
                 <div>Verbal</div>
               </div>
-              <div class="stat">61 / <span>100</span></div>
+              <div class="stat">61 <span> / 100</span></div>
             </li>
-            <li id="pure">
+            <li id="pure" class="last">
               <div>
                 <img src="./assets/images/icon-visual.svg" alt="Visual" />
                 <div>Visual</div>
               </div>
-              <div class="stat">72 / <span>100</span></div>
+              <div class="stat">72 <span> / 100</span></div>
             </li>
           </ul>
           <button type="button">Continue</button>

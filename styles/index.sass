@@ -1,6 +1,6 @@
-// @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500700800&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500700800&display=swap')
 
-$light-red: hsl(0, 100%, 67%)
+$red: hsl(0, 100%, 67%)
 $orangey-yellow: hsl(39, 100%, 56%)
 $green-teal: hsl(166, 100%, 37%)
 $cobalt-blue: hsl(234, 85%, 45%)
@@ -33,6 +33,8 @@ section
     display: flex
     height: 400px
     width: 550px
+    background-color: white
+    border-radius: 20px
     .info
         display: flex
         &__result
@@ -89,6 +91,8 @@ section
             justify-content: space-between
             padding: 2rem
             width: 50%
+            border-radius: 20px
+            background-color: $white
             h3
                 font-weight: 700
             ul
@@ -97,6 +101,8 @@ section
                     justify-content: space-between
                     padding: .9rem .5rem
                     background-color: $persian-blue-circle
+                    border-radius: 10px
+                    margin-top: 0.8rem
                     div
                         display: flex
                         align-items: center
@@ -104,7 +110,56 @@ section
                             font-size: 1.1rem
                             font-weight: 500
                             padding-left: .9rem
+                    .stat
+                        span
+                            margin-left: 5px
+                            color: mix(white, $dark-gray-blue, 45%)
                 #red
+                    background-color: mix(white, $red, 90%)
                     div
                         div
-                            color: $light-red
+                            color: $red
+                #yellow
+                    background-color: mix(white, $orangey-yellow, 90%)
+                    div
+                        div
+                            color: $orangey-yellow
+                #green
+                    background-color: mix(white, $green-teal, 90%)
+                    div
+                        div
+                            color: $green-teal
+                #pure
+                    background-color: mix(white, $light-royal-blue, 90%)
+                    div
+                        div
+                            color: $light-royal-blue
+        button
+            margin-top: 1rem
+            height: 2.4rem
+            color: $pale-blue
+            background-color: $dark-gray-blue
+            border-radius: 1.5rem
+            border: none
+
+@media screen and (max-width: 562px)
+    section
+        width: 100vw
+        height: 100vh
+        .info
+            align-items: center
+            flex-direction: column
+            width: 100vw
+            height: 100vh
+            &__result
+                width: 100%
+                border-radius: 0 0 1rem 1rem
+                text-align: center
+                p
+                    text-align: center
+                    width: 250px
+                    margin: 0 auto
+            &__summary
+                width: 100%
+            button
+                margin-top: 2rem
